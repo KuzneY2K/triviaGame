@@ -1,11 +1,12 @@
 export class Question {
-    constructor({ category, correct_answer, difficulty, incorrect_answers, question, type }) {
+    constructor({ category, correct_answer, difficulty, incorrect_answers, question, type, id }) {
         this.category = category,
             this.correctAnswer = correct_answer,
             this.difficulty = difficulty,
             this.incorrectAnswer = incorrect_answers,
             this.question = question,
             this.type = type
+        this.id = id
     }
 
     get TriviaCards() {
@@ -22,7 +23,7 @@ export class Question {
           <option value="2" id="qa3">${this.correctAnswer}</option>
           <option value="3" id="qa4">${this.incorrectAnswer[1]}</option>
         </select>
-        <button class="btn btn-grad" id="submit-button">Submit</button>
+        <button class="btn btn-grad" id="submit-button" onclick="app.HomeController.submitAnswer()">Submit</button>
       </div>
     </div>
   </div>`

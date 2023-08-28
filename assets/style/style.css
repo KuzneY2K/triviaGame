@@ -30,6 +30,10 @@
     background: linear-gradient(to right, #85D8CE, #085078);
 }
 
+.bg-custom-2 {
+    background: linear-gradient(to right, #13534b, #2389c0);
+}
+
 .general {
     min-height: 90vh;
 }

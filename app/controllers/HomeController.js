@@ -12,7 +12,9 @@ export class HomeController {
     let myQuestions = AppState.questions
     let content = ''
     let cardContainer = document.getElementById('trivia-cards')
-    myQuestions.forEach(questions => content += questions.TriviaCards)
+    let activeQ = myQuestions.find(question => question.id == Math.floor(Math.random() * 10))
+    console.log(Math.floor(Math.random() * 10))
+    content += activeQ.TriviaCards
     cardContainer.innerHTML = content
   }
 

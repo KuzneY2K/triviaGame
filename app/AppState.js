@@ -19,6 +19,8 @@ class ObservableAppState extends EventEmitter {
 
   questions = []
 
+  activeQ = null
+
 }
 
 export const AppState = new Proxy(new ObservableAppState(), {
