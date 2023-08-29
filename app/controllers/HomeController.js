@@ -43,11 +43,26 @@ export class HomeController {
 
   submitAnswer() {
     window.event.preventDefault()
-    let a1 = document.getElementById('a1')
-    let a2 = document.getElementById('a2')
-    let a3 = document.getElementById('a3')
-    let a4 = document.getElementById('a4')
-    console.log(a1.value)
+    let answer = document.getElementById('answer').value
+    let answer1 = document.getElementById('answer1').value
+    let answer2 = document.getElementById('answer2').value
+    let answer3 = document.getElementById('answer3').value
+    if (answer === AppState.activeQuestion.correctAnswer) {
+      alert('right on')
+      this.drawCards()
+    } else if (answer1 === AppState.activeQuestion.correctAnswer) {
+      alert('right on')
+      this.drawCards()
+    } else if (answer2 === AppState.activeQuestion.correctAnswer) {
+      alert('right on')
+      this.drawCards()
+    } else if (answer3 === AppState.activeQuestion.correctAnswer) {
+      alert('right on')
+      this.drawCards()
+    } else {
+
+    }
+
   }
 
   async getQuestions() {
