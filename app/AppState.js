@@ -19,7 +19,7 @@ class ObservableAppState extends EventEmitter {
 
   questions = []
 
-  activeQ = null
+  activeQuestion = null
 
 }
 
