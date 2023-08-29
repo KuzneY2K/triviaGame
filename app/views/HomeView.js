@@ -6,7 +6,7 @@ export const HomeView = /*html*/ `  <section class="row p-0 m-0 d-flex flex-row 
 
       </div>
       <div class="btn-container d-flex flex-row justify-content-center top-50">
-        <button class="btn btn-grad mt-5" onclick="app.HomeController.getQuestions()">START TRIVIA</button>
+        <button class="btn btn-grad mt-5" id="start-btn" onclick="app.HomeController.getQuestions()">START TRIVIA</button>
       </div>
     </div>
   </section>`

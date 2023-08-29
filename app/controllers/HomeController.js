@@ -43,11 +43,15 @@ export class HomeController {
 
   submitAnswer() {
     window.event.preventDefault()
-    alert('submitted')
-    this.drawCards()
+    let a1 = document.getElementById('a1')
+    let a2 = document.getElementById('a2')
+    let a3 = document.getElementById('a3')
+    let a4 = document.getElementById('a4')
+    console.log(a1.value)
   }
 
   async getQuestions() {
+    document.getElementById('start-btn').style.visibility = "hidden"
     await homeService.getQuestions()
     this.drawCards()
   }
