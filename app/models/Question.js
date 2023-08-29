@@ -37,12 +37,14 @@ export class Question {
         <h5 class="card-title bg-transparent" id="difficulty">${this.difficulty}</h5>
         <h6 class="card-subtitle mb-2 text-muted bg-transparent" id="category">${this.category}</h6>
         <p class="card-text bg-transparent" id="Question">${this.question}</p>
-        <label class="radio"> <input type="radio" name="brazil" value="brazil"><span>${shuffledOptions[0]}</span></label>
-                <label class="radio"> <input type="radio" name="brazil" value="brazil"><span>${shuffledOptions[1]}</span></label>
-                        <label class="radio"> <input type="radio" name="brazil" value="brazil"><span>${shuffledOptions[2]}</span></label>
-                                <label class="radio"> <input type="radio" name="brazil" value="brazil"><span>${shuffledOptions[4]}</span></label>
+        <form>
+        <label class="radio"> <input type="radio" name="a1" id="a1"><span>${shuffledOptions[0]}</span></label>
+                <label class="radio"> <input type="radio" name="a2" id="a2"><span>${shuffledOptions[1]}</span></label>
+                        <label class="radio"> <input type="radio" name="a3" id="a3"><span>${shuffledOptions[2]}</span></label>
+                                <label class="radio"> <input type="radio" name="a4" id="a4"><span>${shuffledOptions[3]}</span></label>
         <div class="btn-container d-flex flex-row justify-content-center">
-        <button class="btn btn-grad text-white" id="submit-button" onsubmit="app.HomeController.submitAnswer()">Submit</button>
+        <button class="btn btn-grad text-white" id="submit-button" onclick="app.HomeController.submitAnswer()" type="submit">Submit</button>
+        </form>
         </div>
       </div>
     </div>

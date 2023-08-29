@@ -42,6 +42,8 @@ export class HomeController {
   }
 
   submitAnswer() {
+    window.event.preventDefault()
+    alert('submitted')
     this.drawCards()
   }
 
